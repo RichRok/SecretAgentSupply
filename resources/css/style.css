@@ -204,12 +204,12 @@ footer {
 
   .headline h1 {
     font-size: 1rem;
-}
+  }
 
   .headline {
     padding: 1rem 2rem;
-    width: 100%;
     top: 10rem;
+    max-width: 100%;
   }
 
   .business-info {
