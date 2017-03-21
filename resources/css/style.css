@@ -1,0 +1,228 @@
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Header Container */
+
+.company {
+  background-color: black;
+  color: white;
+
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0.5rem;
+}
+
+.container img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.container span {
+  font-size: 1rem;
+}
+
+/* Main Container */
+
+.main-banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+}
+
+.headline {
+  position: relative;
+  background-color: black;
+  color: white;
+  max-width: 20rem;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.headline h1 {
+  padding: 0.25rem 0;
+}
+
+/* Navigation */
+
+nav {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-nav {
+  background-color: firebrick;
+  text-align: center;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Products */
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  height: 9rem;
+}
+
+.product-image img {
+  max-width: 8rem;
+  height: auto;
+}
+
+.description {
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Business Info */
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.title {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+.title p {
+  display: block;
+}
+
+.info {
+  width: 35%;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  padding: 5rem 0;
+  color: white;
+}
+
+@media only screen and (min-width: 1025px) {
+  nav .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  nav .container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .watch {
+    display: none;
+  }
+
+  .product {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .company span {
+    display: none;
+  }
+
+  .company img {
+    margin: 0 auto;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+}
+
+  .headline {
+    padding: 1rem 2rem;
+    width: 100%;
+    top: 10rem;
+  }
+
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
