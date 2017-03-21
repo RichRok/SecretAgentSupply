@@ -176,7 +176,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
   .watch {
     display: none;
   }
